@@ -67,7 +67,7 @@ if($('.sz_time').length>0){
 function get_shop(city_id){ 
 	
 $.ajax({
-		type:"POST",
+		//type:"POST",
 		async:true,
 		url:'http://cblzc.xinyejq.com/srco/datas.js',//必须要有的
 		//data:"city_id="+city_id,
