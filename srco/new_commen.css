@@ -1,0 +1,15 @@
+@charset "utf-8";
+body{
+	 font-family:"微软雅黑",Verdana,Arial,Helvetica,sans-serif;
+	 margin:0px;padding:0px;
+	 background:#fff;
+	 min-width:1200px;
+}
+p,a,h1,h2,h3,h4,h5,h6,form,span,i,em,input,img,small,li,dt,dd{margin:0px;font-style:normal;
+padding:0px;border:0;font-size:14px;color:#666;font-family:"微软雅黑"!important;}
+table{border-collapse:collapse;border-spacing:0
+}
+ul,ol,dl,dt,dd,img,li{margin:0px;padding:0px;list-style-type:none;}
+a{text-decoration:none;outline:none;transition:all .2s ease-in-out;}
+a:hover,a.active{text-decoration:none;}
+.clear{clear:both;}

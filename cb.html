@@ -1,0 +1,159 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>车</title>
+
+<link rel="stylesheet" type="text/css" href="./srco/new_commen.css"> 
+<link rel="stylesheet" type="text/css" href="./srco/new_index.css"> 
+<link rel="stylesheet" href="./srco/kuCity.css"> 
+<link rel="stylesheet" href="./srco/layer.css"> 
+<script type="text/javascript" src="./srco/jquery-1.9.1.min.js"></script>  
+</head> 
+<body> 
+
+    <div class="xuanche-kuang"> 
+        <div class="xuanche"> 
+			 <div class="xuan">
+				 <ul class="title-xuan"> 
+					 <li class="on-xuan">短租自驾<span>（1-30天）</span></li>
+					 <li class="">特价套餐<span>（低至7折）</span></li> 
+					 <div class="clear"></div> 
+				 </ul>   
+				 <div class="duanzu" style="display: block;"> 
+						<form id="choose_car_form" method="post"> 
+							<ul> 
+								<li class="title-qu">取车地点</li> 
+								<li class="li-input">
+									<input type="text" name="city_name" value="郑州" readonly id="take_city" class="choose_city">
+								</li> 
+								<li class="li-input right-in"> 
+									<input type="hidden" name="shopid" value="31"> 
+									<input type="text" name="shop_name" value="农业东路店" readonly id="choose_join" class="choose_join">
+									<div class="shop_list" style="display: none;"> 
+										<ul class="clear"> 
+											<li>
+												<a href="javascript:;">郑东新区</a>
+												<div class="clear"> 
+												   <dl class="clear"> 
+													   <dd>
+														   <b data_id="1">农业东路店</b>
+														   <p>地址：郑州市农业东路天瑞街交叉口向东100米路北车便利租车<br>营业时间：
+														   <span>8:30-18:00</span>
+														   </p>
+													   </dd>
+													   <dd><b data_id="14">金水东路送车点</b><p>地址：金水东路黄河南路交叉口东南角招商银行<br>营业时间：<span>8:30-18:00</span></p></dd>
+													   <dd><b data_id="17">郑州东站送车点</b><p>地址：郑州东站停车场南区（站南路与东站南街交叉口）<br>营业时间：<span>8:30-18:00</span></p></dd> 
+												   </dl> 
+												</div> 
+											</li>
+											<li>
+												<a href="javascript:;">金水区</a> 
+												<div class="clear"> 
+													<dl class="clear"> 
+														<dd><b data_id="15">未来路送车点</b>
+															<p>地址：未来路与郑汴路交<br>营业时间：
+															<span>8:30-18:00</span></p>
+														</dd>
+														<dd><b data_id="16">曼哈顿送车点</b>
+															<p>地址：金水路未来路交汇处东50米路南曼哈顿广场<br>营业时间：
+															<span>8:30-18:00</span></p>
+														</dd>
+														
+													</dl> 
+												</div> 
+											</li>
+											<li>
+												<a href="javascript:;">登封</a> 
+												<div class="clear"> 
+													<dl class="clear"> 
+														 <dd><b data_id="11">登封市店</b>
+															 <p>地址：河南省郑州市登封县崇高路崇高路小学东100米路南<br>营业时间：
+															 <span>8:00-22:00</span></p>
+														 </dd> 
+													</dl> 
+												</div> 
+											</li>
+										</ul> 
+									</div> 
+								</li> 
+								<div class="clear"></div> 
+							</ul> 
+							<ul>
+									<li class="title-qu">还车地点</li> 
+									<li class="li-input">
+										<input type="text" name="return_city_name" value="郑州" readonly class="choose_city">
+									</li>
+									<li class="li-input right-in">
+										<input type="text" name="return_shop_name" value="农业东路店" readonly class="choose_join">、
+									</li> 
+									<div class="clear"></div> 
+							</ul> 
+							 <ul> 
+								 <li class="title-qu">取车时间</li>
+								 <li class="li-input">
+									 <input name="start_date" value="2016-11-01" class="date" type="text" id="start" readonly>
+								 </li> 
+								 <li class="li-input right-in"> 
+									 <input class="right-in choose_time" name="start_hour" type="text" value="10:00" readonly> 
+									 <ol class="sz_time clear" style="display: none;">
+										 <li>8:30</li><li>9:00</li><li>9:30</li><li>10:00</li><li>10:30</li><li>11:00</li><li>11:30</li><li>12:00</li>
+										 <li>12:30</li><li>13:00</li><li>13:30</li><li>14:00</li><li>14:30</li><li>15:00</li><li>15:30</li>
+										 <li>16:00</li><li>16:30</li><li>17:00</li><li>17:30</li><li>18:00</li>
+									 </ol> 
+								 </li> 
+								 <div class="clear"></div> 
+							 </ul> 
+							 <ul> 
+								 <li class="title-qu">送车时间</li> 
+								 <li class="li-input">
+									 <input class="date" name="end_date" value="2016-11-05" type="text" id="end" readonly>
+								 </li>
+								 <li class="li-input right-in">
+									 <input class="right-in choose_time" name="end_hour" type="text" value="10:00" readonly> 
+									 <ol class="sz_time clear" style="display: none;">
+										 <li>8:30</li><li>9:00</li><li>9:30</li><li>10:00</li><li>10:30</li><li>11:00</li><li>11:30</li><li>12:00</li>
+										 <li>12:30</li><li>13:00</li><li>13:30</li><li>14:00</li><li>14:30</li><li>15:00</li><li>15:30</li><li>16:00</li>
+										 <li>16:30</li><li>17:00</li><li>17:30</li><li>18:00</li>
+									 </ol> 
+								 </li> 
+								 <div class="clear"></div> 
+							 </ul> 
+							 <a class="liji-xuanche" href="javascript:;" id="short_goselectcar">立即选车</a>
+						</form> 
+				 </div>
+                 <!--特价套餐-->
+                 <div class="youhui" style="display: none;">
+                     <ul class="youhui1">
+                         <li class="li1-title">首日0租金</li> 
+                         <li class="li1-new"><font color="red">新用户专享</font></li> 
+                         <li class="li1-yuan li1-yuan-first">超值<br>优惠</li> 
+                         <a class="li1-liji" href="http://www.cblzc.com/dz/">立即订车</a> 
+                     </ul> 
+                     <ul class="youhui1"> 
+                         <li class="li1-title">租四免一</li>
+                         <li class="li1-new">4天以上</li> 
+                         <li class="li1-yuan">7.5折</li> 
+                         <a class="li1-liji" href="http://www.cblzc.com/dz/?">立即订车</a> 
+                     </ul> 
+                     <ul class="youhui1 youhui3"> <li class="li1-title">租七免二</li> 
+                         <li class="li1-new">7天以上</li> 
+                         <li class="li1-yuan">7折起</li> 
+                         <a class="li1-liji" href="http://www.cblzc.com/dz/?sc117">立即订车</a> 
+                     </ul> 
+                     <div class="clear"></div> 
+                     <div class="tishi">特价套餐仅免除车辆基本租金，不包含保险费及其它可选费用</div> 
+                 </div> 
+                 <!--特价套餐结束-->   
+			 </div> 
+        </div> 
+    </div> 
+<!--city.js弹层插件-->	 
+<script type="text/javascript" src="./srco/layer.js"></script> 
+<script type="text/javascript" src="./srco/city.js"></script> 
+<script type="text/javascript" src="./srco/kuCity.js"></script>  
+<script type="text/javascript" src="./srco/ajax.js"></script>
+<script type="text/javascript" src="./srco/new_index.js"></script>  
+<script>$('#take_city').kuCity();</script>
+</body>
+</html>

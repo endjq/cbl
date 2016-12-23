@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="srco/layer.css"> 
+
+</head>
+
+<body>
+<div id="iid" style="width:100px; height:24px; background:gray;"></div>
+<script src="srco/jquery-1.9.1.min.js"></script>
+<script src="srco/layer.js"></script>
+<script>
+$('#iid').on('click', function(){
+  var that = this;
+  layer.tips('只想提示地精准些', that); //在元素的事件回调体中，follow直接赋予this即可
+});
+</script>
+</body>
+</html>
