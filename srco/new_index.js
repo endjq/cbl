@@ -65,7 +65,7 @@ if($('.sz_time').length>0){
 
 /*发送Ajax(基于jquery的)*/
 function get_shop(city_id){ 
-	console.log(http://cblzc.xinyejq.com/srco/datas.js);
+	
 $.ajax({
 		type:"POST",
 		async:true,
