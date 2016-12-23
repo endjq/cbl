@@ -68,7 +68,7 @@ function get_shop(city_id){
 $.ajax({
 		type:"POST",
 		async:true,
-		url:'https://xinyejq.github.io/cblzc/srco',//必须要有的
+		url:'https://xinyejq.github.io/cblzc/srco/datas.js',//必须要有的
 		//data:"city_id="+city_id,
 		dataType:'json',//必须要有的
 		success:function(jso){
