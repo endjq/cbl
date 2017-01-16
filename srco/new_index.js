@@ -94,6 +94,9 @@ $.ajax({
 			$('.shop_list').html('<ul class="clear">'+str+'</ul>');
 			$("input[name='shopid']").val($('.shop_list b').eq(0).attr('data_id'));
 			$(".choose_join").val($('.shop_list b').eq(0).html());
+			var firstTime=$('.shop_list span').eq(0).text();
+			var splitTime=firstTime.split("-");
+			$(".choose_time").val(splitTime[0]);
 			$(".sz_time").html(online_period($('.shop_list span').eq(0).text(),'li'));
 			choose_shop();
 		}
@@ -162,6 +165,9 @@ function choose_shop(){
         $(".shop_list").hide();
 	    $("input[name='shopid']").val($(this).attr('data_id'));
 	    $(".choose_join").val($(this).html());
+	    var firstTime=$(this).parent().find('span').text();
+	    var splitTime=firstTime.split("-");
+	    $(".choose_time").val(splitTime[0]);
 	    $(".sz_time").html(online_period($(this).parent().find('span').text(),'li'));
     });
     $(document).mouseup(function(e){
